@@ -16,10 +16,6 @@ export async function obterProjetos() {
       return projetos.filter((projeto) => projeto.tipo === Tipo.JOGO);
     },
     get destaques() {
-      console.log(
-        'projetos.filter((projeto) => projeto.destaque)',
-        projetos.filter((projeto) => projeto.destaque)
-      );
       return projetos.filter((projeto) => projeto.destaque);
     },
   };
