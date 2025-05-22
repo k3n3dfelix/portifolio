@@ -2,7 +2,11 @@ import { Projeto, Tipo } from '@/core*';
 import { httpGet } from './api';
 
 export async function obterProjetos() {
-  const projetos: Projeto[] = await httpGet('/projetos');
+  const projetosRaw = await httpGet('/projetos');
+  console.log('Retorno do httpGet /projetos:', projetosRaw);
+
+  // Verifique se o retorno é array
+  const projetos = Array.isArray(projetosRaw) ? projetosRaw : [];
 
   return {
     todos: projetos,
@@ -20,6 +24,7 @@ export async function obterProjetos() {
     },
   };
 }
+
 
 export async function obterProjeto(id: string): Promise<Projeto | null> {
   return await httpGet(`/projetos/${id}`);
