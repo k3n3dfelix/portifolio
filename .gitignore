@@ -1,0 +1,67 @@
+# ===============================
+# Ignorar node_modules em raiz e subpastas
+node_modules/
+**/node_modules/
+
+# ===============================
+# Ignorar builds e caches do Next.js (frontend)
+frontend/.next/
+frontend/out/
+frontend/coverage/
+frontend/.env*
+frontend/.turbo/
+frontend/node_modules
+
+# ===============================
+# Ignorar builds e caches do NestJS (backend)
+backend/dist/
+backend/coverage/
+backend/.env*
+backend/node_modules/
+
+# ===============================
+# Arquivos temporários e logs gerais
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===============================
+# Arquivos de configuração e IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ===============================
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Cache do TypeScript
+*.tsbuildinfo
+
+# ===============================
+# Jest cache (testes)
+**/jest-cache/
+
+# ===============================
+# Arquivos de ambiente no root, se existirem
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===============================
+# Outros arquivos temporários e pasta temporária
+tmp/
+temp/
+
+# ===============================
+# Yarn Integrity
+.yarn-integrity
