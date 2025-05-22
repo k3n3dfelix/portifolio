@@ -1,0 +1,15 @@
+{
+    "projects": [],
+    "builds": [],
+    "rewrites": [],
+    "routes": [],
+    "redirects": [],
+    "headers": [],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "ignoreCommand": "",
+    "outputDirectory": "frontend/.next",
+    "framework": "nextjs",
+    "rootDirectory": "frontend"
+  }
+  
