@@ -1,4 +1,4 @@
-const baseURL = process.env.NEXT_PUBLIC_API_URL;
+const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
 
 export async function httpGet(url: string) {
     console.log('baseUrkl', baseURL)
